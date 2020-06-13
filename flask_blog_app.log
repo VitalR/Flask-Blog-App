@@ -1,0 +1,262 @@
+2020-06-08 22:42:32,840 INFO: flask_blog_app startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:38]
+2020-06-08 22:42:57,383 ERROR: Exception on /home [GET] [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/routes.py", line 28, in home
+    return render_template('home.html', posts=posts)
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/templates/home.html", line 1, in top-level template code
+    {% extends "layout.html" %}
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/templates/layout.html", line 52, in top-level template code
+    <input class="form-control form-control-sm mr-sm-3" action="{{ url_for('search') }}" type="search" placeholder="Search"
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/helpers.py", line 358, in url_for
+    endpoint, values, method=method, force_external=external
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/werkzeug/routing.py", line 2179, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'search'. Did you mean 'static' instead?
+2020-06-08 22:43:04,875 ERROR: Exception on /home [GET] [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/routes.py", line 28, in home
+    return render_template('home.html', posts=posts)
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/templates/home.html", line 1, in top-level template code
+    {% extends "layout.html" %}
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/templates/layout.html", line 52, in top-level template code
+    <input class="form-control form-control-sm mr-sm-3" action="{{ url_for('search') }}" type="search" placeholder="Search"
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/helpers.py", line 358, in url_for
+    endpoint, values, method=method, force_external=external
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/werkzeug/routing.py", line 2179, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'search'. Did you mean 'static' instead?
+2020-06-08 22:44:23,779 ERROR: Exception on /home [GET] [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/routes.py", line 28, in home
+    return render_template('home.html', posts=posts)
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/templates/home.html", line 1, in top-level template code
+    {% extends "layout.html" %}
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/templates/layout.html", line 52, in top-level template code
+    <input class="form-control form-control-sm mr-sm-3" type="search" placeholder="Search"
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/helpers.py", line 358, in url_for
+    endpoint, values, method=method, force_external=external
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/werkzeug/routing.py", line 2179, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'search'. Did you mean 'static' instead?
+2020-06-08 22:44:25,452 ERROR: Exception on /home [GET] [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/routes.py", line 28, in home
+    return render_template('home.html', posts=posts)
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/templates/home.html", line 1, in top-level template code
+    {% extends "layout.html" %}
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/templates/layout.html", line 52, in top-level template code
+    <input class="form-control form-control-sm mr-sm-3" type="search" placeholder="Search"
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/flask/helpers.py", line 358, in url_for
+    endpoint, values, method=method, force_external=external
+  File "/Users/vrodikov/PycharmProjects/Flask-Blog-App/venv/lib/python3.7/site-packages/werkzeug/routing.py", line 2179, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'search'. Did you mean 'static' instead?
+2020-06-08 22:44:42,400 INFO: flask_blog_app startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:38]
+2020-06-08 23:26:10,994 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:38]
+2020-06-08 23:26:27,919 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:38]
+2020-06-08 23:26:28,581 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:38]
+2020-06-09 08:12:39,378 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:38]
+2020-06-09 08:12:39,789 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:38]
+2020-06-09 08:17:46,564 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:38]
+2020-06-09 08:17:46,978 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:38]
+2020-06-09 08:19:03,633 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:38]
+2020-06-09 08:20:47,562 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:38]
+2020-06-09 08:26:27,705 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:38]
+2020-06-09 08:27:02,028 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:38]
+2020-06-09 08:27:02,433 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:38]
+2020-06-09 08:46:10,889 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:38]
+2020-06-09 08:52:00,045 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:38]
+2020-06-09 08:54:30,450 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:38]
+2020-06-09 08:55:06,765 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:38]
+2020-06-09 08:55:07,166 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:38]
+2020-06-09 09:26:26,044 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:38]
+2020-06-09 22:18:48,425 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:39]
+2020-06-09 22:18:48,834 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:39]
+2020-06-09 22:21:43,046 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:39]
+2020-06-09 22:48:47,471 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:43]
+2020-06-09 22:48:47,945 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:43]
+2020-06-09 23:11:01,205 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:43]
+2020-06-09 23:13:19,964 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:43]
+2020-06-09 23:25:47,620 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:45]
+2020-06-09 23:25:48,111 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:45]
+2020-06-09 23:29:24,119 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:45]
+2020-06-09 23:30:00,115 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:45]
+2020-06-10 00:08:24,051 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:45]
+2020-06-10 00:08:24,541 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:45]
+2020-06-10 00:09:15,051 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:45]
+2020-06-10 07:47:38,240 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:45]
+2020-06-10 08:05:53,367 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:45]
+2020-06-10 19:47:35,729 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:45]
+2020-06-10 19:47:36,156 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:45]
+2020-06-10 20:13:32,818 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:45]
+2020-06-10 20:14:04,849 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:45]
+2020-06-10 20:15:19,561 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:45]
+2020-06-10 20:15:38,363 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:45]
+2020-06-10 20:17:47,853 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:45]
+2020-06-10 20:22:02,169 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:45]
+2020-06-10 20:22:18,927 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:45]
+2020-06-10 20:22:53,015 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:45]
+2020-06-10 20:28:51,188 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:45]
+2020-06-10 20:30:50,683 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:45]
+2020-06-10 20:32:22,582 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:45]
+2020-06-10 20:33:25,027 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:45]
+2020-06-10 20:34:51,841 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:45]
+2020-06-10 20:35:22,866 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:45]
+2020-06-10 20:35:41,817 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:45]
+2020-06-10 21:04:00,721 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:45]
+2020-06-10 21:11:26,840 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:45]
+2020-06-10 21:11:38,577 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:45]
+2020-06-10 21:12:05,536 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:45]
+2020-06-10 21:16:26,073 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:45]
+2020-06-10 21:18:18,370 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:45]
+2020-06-10 21:21:34,978 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:45]
+2020-06-10 21:22:31,373 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:45]
+2020-06-10 21:23:23,905 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:45]
+2020-06-10 21:23:56,912 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:45]
+2020-06-10 21:27:52,022 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:42]
+2020-06-10 21:32:01,536 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:42]
+2020-06-10 21:32:34,532 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:42]
+2020-06-10 21:32:46,229 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:42]
+2020-06-10 21:33:37,558 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:42]
+2020-06-10 21:39:49,075 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:42]
+2020-06-10 21:42:00,554 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:42]
+2020-06-10 21:42:42,715 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:44]
+2020-06-10 21:43:40,029 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:44]
+2020-06-10 21:45:40,371 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:44]
+2020-06-10 21:48:35,631 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:44]
+2020-06-10 21:49:31,085 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:44]
+2020-06-10 21:50:38,643 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:44]
+2020-06-10 21:54:25,935 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:44]
+2020-06-10 21:56:45,705 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:44]
+2020-06-10 21:58:18,786 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:44]
+2020-06-10 21:59:39,709 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:44]
+2020-06-10 22:00:08,641 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:44]
+2020-06-10 22:01:09,226 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:44]
+2020-06-10 22:02:39,089 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:44]
+2020-06-10 22:11:35,664 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:44]
+2020-06-10 22:12:19,795 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:44]
+2020-06-10 22:13:40,523 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:44]
+2020-06-10 22:13:58,333 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:44]
+2020-06-10 22:14:44,557 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:44]
+2020-06-10 22:15:58,209 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:44]
+2020-06-10 22:17:52,565 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:44]
+2020-06-10 22:19:50,991 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:44]
+2020-06-10 22:22:52,387 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:44]
+2020-06-10 22:24:14,150 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:44]
+2020-06-10 22:26:47,080 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:44]
+2020-06-10 22:34:30,781 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:43]
+2020-06-10 23:13:23,637 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:43]
+2020-06-10 23:16:40,115 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:43]
+2020-06-11 15:34:13,344 INFO: Flask-Blog-App startup [in /Users/vrodikov/PycharmProjects/Flask-Blog-App/flaskblogapp/__init__.py:43]
