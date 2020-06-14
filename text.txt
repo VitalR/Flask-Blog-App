@@ -7,7 +7,7 @@ flask run
 # To set up SECRET_KEY for cookies/password
 >>> import secrets
 secrets.token_hex(16)
-'1645ce728b8c21ca31f73333cd3c1e69'
+''
 
 
 # Run DB
